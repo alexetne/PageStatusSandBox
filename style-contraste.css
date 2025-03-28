@@ -1,36 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan&display=swap');
+
 body {
-    background-color: #000000;
-    color: #ffffff;
-    font-family: 'DM Sans', sans-serif;
-  }
-  
-  h1, h2, h3, h4 {
-    font-family: 'League Spartan', sans-serif;
-  }
-  
-  .hero {
-    background-color: #F4B400;
-  }
-  
-  .section {
-    background-color: #000000;
-  }
-  
-  .feature-card {
-    background-color: #1c1c1c;
-    color: #ffffff;
-  }
-  
-  .btn-primary {
-    background-color: #7447E1;
-    border-color: #7447E1;
-  }
-  
-  .btn-primary:hover {
-    background-color: #5a35b6;
-  }
-  
-  footer {
-    background-color: #2E2E2E;
-  }
-  
+  background-color: #000000;
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'League Spartan', sans-serif;
+}
+
+.hero,
+.section {
+  background-color: #000000;
+}
+
+.feature-card {
+  background-color: #1a1a1a;
+  color: #ffffff;
+  transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.btn-primary {
+  background-color: #7447E1;
+  border-color: #7447E1;
+  color: #ffffff;
+}
+
+.btn-primary:hover {
+  background-color: #5a35b6;
+  border-color: #5a35b6;
+}
+
+.btn-outline-light {
+  border-color: #ffffff;
+  color: #ffffff;
+}
+
+.btn-outline-light:hover {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+footer {
+  background-color: #000000;
+  color: #ffffff;
+}
