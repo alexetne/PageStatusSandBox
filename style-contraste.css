@@ -1,0 +1,36 @@
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'DM Sans', sans-serif;
+  }
+  
+  h1, h2, h3, h4 {
+    font-family: 'League Spartan', sans-serif;
+  }
+  
+  .hero {
+    background-color: #F4B400;
+  }
+  
+  .section {
+    background-color: #000000;
+  }
+  
+  .feature-card {
+    background-color: #1c1c1c;
+    color: #ffffff;
+  }
+  
+  .btn-primary {
+    background-color: #7447E1;
+    border-color: #7447E1;
+  }
+  
+  .btn-primary:hover {
+    background-color: #5a35b6;
+  }
+  
+  footer {
+    background-color: #2E2E2E;
+  }
+  
