@@ -1,0 +1,105 @@
+:root {
+    --violet: #7447E1;
+    --white: #FFF;
+    --black: #000;
+  }
+  
+  [data-theme="light"] {
+    --bg-color: var(--white);
+    --text-color: var(--black);
+    --btn-bg: var(--violet);
+    --btn-text: var(--white);
+    --btn-outline-border: var(--violet);
+    --btn-outline-text: var(--violet);
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: var(--black);
+    --text-color: var(--white);
+    --btn-bg: var(--violet);
+    --btn-text: var(--white);
+    --btn-outline-border: var(--violet);
+    --btn-outline-text: var(--violet);
+  }
+  
+  .text-violet {
+    color: var(--violet);
+  }
+  
+  .btn-violet {
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    border: none;
+  }
+  
+  
+  .btn-outline-violet {
+    border: 2px solid var(--btn-outline-border);
+    color: var(--btn-outline-text);
+    background-color: transparent;
+  }
+  
+  .btn-violet:hover,
+  .btn-outline-violet:hover {
+    background-color: #5a35b3;
+    color: white;
+  }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  #main-navbar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #main-navbar .nav-link,
+  #main-navbar .navbar-brand {
+    color: var(--text-color) !important;
+  }
+  
+  #main-navbar .nav-link:hover {
+    color: var(--violet) !important;
+  }
+  .badge-status {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #999;
+    margin: 0.2em;
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  /* Couleurs par statut */
+  .status-up {
+    background-color: #28a745; /* vert */
+  }
+  .status-maintenance {
+    background-color: #ffc107; /* jaune */
+    color: #000;
+  }
+  .status-down {
+    background-color: #dc3545; /* rouge */
+  }
+  .status-unknown {
+    background-color: #6c757d; /* gris */
+  }
+  
+  /* Optionnel : badge réactif au thème */
+  [data-theme="dark"] .status-maintenance {
+    background-color: #ffcd39;
+    color: #000;
+  }
+  
