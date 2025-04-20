@@ -38,6 +38,9 @@ if (session_status() === PHP_SESSION_NONE) session_start();
           <li class="nav-item">
             <a class="nav-link" href="status.php">Tous les statuts</a>
           </li>
+          <li class="nav-item">
+            <a class="nav-link" href="postes/index.php">Nos offres</a>
+          </li>
         </ul>
         <button class="btn btn-outline-violet ms-3" id="toggle-theme">🌙 / ☀️</button>
       </div>

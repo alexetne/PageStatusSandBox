@@ -1,0 +1,180 @@
+:root {
+    --violet: #7447E1;
+    --white: #FFF;
+    --black: #000;
+  }
+  
+  [data-theme="light"] {
+    --bg-color: var(--white);
+    --text-color: var(--black);
+    --btn-bg: var(--violet);
+    --btn-text: var(--white);
+    --btn-outline-border: var(--violet);
+    --btn-outline-text: var(--violet);
+  }
+  
+  [data-theme="dark"] {
+    --bg-color: var(--black);
+    --text-color: var(--white);
+    --btn-bg: var(--violet);
+    --btn-text: var(--white);
+    --btn-outline-border: var(--violet);
+    --btn-outline-text: var(--violet);
+  }
+  
+  .text-violet {
+    color: var(--violet);
+  }
+  
+  .btn-violet {
+    display: inline-block;
+    background-color: var(--btn-bg);
+    color: var(--btn-text);
+    padding: 10px 18px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  
+  .btn-outline-violet {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--btn-outline-text);
+    border: 2px solid var(--btn-outline-border);
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+  }
+  
+  .btn-violet:hover,
+  .btn-outline-violet:hover {
+    background-color: #5a35b3;
+    color: white;
+  }
+  body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  * {
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  #main-navbar {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  #main-navbar .nav-link,
+  #main-navbar .navbar-brand {
+    color: var(--text-color) !important;
+  }
+  
+  #main-navbar .nav-link:hover {
+    color: var(--violet) !important;
+  }
+  .badge-status {
+    display: inline-block;
+    padding: 0.4em 0.8em;
+    font-size: 0.9rem;
+    font-weight: 500;
+    border-radius: 0.5rem;
+    color: #fff;
+    background-color: #999;
+    margin: 0.2em;
+    font-family: 'Segoe UI', sans-serif;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+  }
+  
+  /* Couleurs par statut */
+  .status-up {
+    background-color: #28a745; /* vert */
+  }
+  .status-maintenance {
+    background-color: #ffc107; /* jaune */
+    color: #000;
+  }
+  .status-down {
+    background-color: #dc3545; /* rouge */
+  }
+  .status-unknown {
+    background-color: #6c757d; /* gris */
+  }
+  
+  /* Optionnel : badge réactif au thème */
+  [data-theme="dark"] .status-maintenance {
+    background-color: #ffcd39;
+    color: #000;
+  }
+  
+  .container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+
+  .page-title {
+    text-align: center;
+    color: var(--violet);
+    font-size: 2.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .page-subtitle {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+  }
+  
+  .job-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+  
+  .card {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card h2 {
+    margin-top: 0;
+    color: var(--violet);
+  }
+  
+  .card p {
+    flex-grow: 1;
+  }
+  
+  .cta {
+    margin-top: 15px;
+    text-align: right;
+  }
+
+  [data-theme="dark"] .card {
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  }
